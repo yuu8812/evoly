@@ -29,5 +29,7 @@ cd evoly
 # パッケージインストール
 bun install
 
+# シークレットマネージャーよりDBconnectionを取得しています
+
 # 開発サーバー起動（例: web フロントエンド）
 bun dev
