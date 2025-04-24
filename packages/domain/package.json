@@ -1,0 +1,11 @@
+{
+  "name": "@evoly/domain",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@google-cloud/secret-manager": "latest",
+    "@evoly/db": "workspace:*"
+  }
+}

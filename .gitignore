@@ -1,0 +1,62 @@
+# Node.js モジュール
+node_modules/
+.pnpm-store/
+.pnp/
+.pnp.js
+
+# Turbo のキャッシュ
+.turbo/
+turbo/
+
+# ビルド出力
+dist/
+build/
+out/
+.next/
+.vite/
+
+# 環境変数
+.env
+.env.local
+.env.*.local
+
+# VSCode 設定
+*.code-workspace
+
+# OS・エディタ固有ファイル
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+# バージョン管理不要のログ・キャッシュ
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Jest キャッシュ
+jest-cache/
+coverage/
+
+# Biome のキャッシュ
+.biome/
+
+# Firebase エミュレーター
+firebase-debug.log
+firestore-debug.log
+
+key.json
+# Turborepo
+.turbo
+
+.mastra
+
+memory.db
+memory.db-*
+
+secret.json
+
+repomix-output.xml

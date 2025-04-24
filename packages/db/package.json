@@ -1,0 +1,22 @@
+{
+  "name": "@evoly/db",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "generate": "bunx drizzle-kit push"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "latest",
+    "pg": "latest",
+    "@evoly/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "drizzle-kit": "latest",
+    "@types/pg": "latest",
+    "drizzle-seed": "latest"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@evoly/hono",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target=bun",
+    "dev": "bun run --hot src/index.ts",
+    "test": "bun test --coverage"
+  },
+  "dependencies": {
+    "zod": "latest",
+    "openai": "latest",
+    "hono": "latest",
+    "@hono/zod-validator": "latest",
+    "@evoly/db": "workspace:*",
+    "@evoly/domain": "workspace:*",
+    "drizzle-zod": "latest",
+    "@google-cloud/tasks": "latest",
+    "@mastra/core": "latest",
+    "@ai-sdk/google":"latest"
+  }
+}

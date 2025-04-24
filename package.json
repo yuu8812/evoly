@@ -1,0 +1,27 @@
+{
+  "name": "my-monorepo",
+  "packageManager": "bun@1.2.5",
+  "private": true,
+  "engines": {
+    "bun": "latest"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "format": "biome check .",
+    "format:fix": "biome check . --write",
+    "tree": "tree -L 3 -I node_modules",
+    "type-check": "npx tsc --noEmit",
+    "generate": "turbo run generate"
+  },
+  "dependencies": {
+    "effect": "latest"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "turbo": "^2.5.0",
+    "@types/bun": "latest",
+    "@evoly/bun-typescript-config": "workspace:*"
+  },
+  "workspaces": ["packages/*", "apps/*"]
+}

@@ -1,0 +1,29 @@
+{
+  "ui": "stream",
+  "tasks": {
+    "format": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "format:fix": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "test": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+    },
+    "generate": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "dev": {
+      "dependsOn": ["format:fix"],
+      "outputs": []
+    }
+  }
+}
