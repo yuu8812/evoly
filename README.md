@@ -30,5 +30,4 @@ cd evoly
 bun install
 
 # 開発サーバー起動（例: web フロントエンド）
-cd apps/web
 bun dev
