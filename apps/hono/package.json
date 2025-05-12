@@ -8,16 +8,24 @@
     "dev": "bun run --hot src/index.ts",
     "test": "bun test --coverage"
   },
+  "exports": {
+    ".": "./src/app.ts"
+  },
   "dependencies": {
     "zod": "latest",
-    "openai": "latest",
     "hono": "latest",
     "@hono/zod-validator": "latest",
-    "@evoly/db": "workspace:*",
+    "@evoly/core": "workspace:*",
     "@evoly/domain": "workspace:*",
-    "drizzle-zod": "latest",
     "@google-cloud/tasks": "latest",
-    "@mastra/core": "latest",
-    "@ai-sdk/google":"latest"
+    "@mastra/core": "0.9.0",
+    "mongoose": "latest",
+    "@ai-sdk/google-vertex": "latest",
+    "sharp": "latest",
+    "openai": "latest",
+    "@google-cloud/storage": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest"
   }
 }

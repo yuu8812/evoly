@@ -2,11 +2,9 @@ import { Effect, pipe } from "effect"
 import honoApp from "./factory/appFactory"
 import { babyRoute } from "./routes/app/baby"
 import { runtime } from "./runtime"
-import { seed } from "./seed"
 
 const createAppEffect = pipe(
   Effect.Do,
-  Effect.tap(seed),
   // honoApp生成
   Effect.flatMap(() => Effect.sync(() => honoApp)),
 

@@ -23,5 +23,8 @@
     "@types/bun": "latest",
     "@evoly/bun-typescript-config": "workspace:*"
   },
-  "workspaces": ["packages/*", "apps/*"]
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
 }

@@ -1,5 +1,7 @@
-import { google } from "@ai-sdk/google"
+import { vertex } from "@ai-sdk/google-vertex"
 
-const geminiModel = google("gemini-2.0-flash-001")
+const vertexModel = vertex.languageModel("gemini-2.0-flash-001")
 
-export { geminiModel }
+const vertexImageModel = vertex.image("imagen-3.0-fast-generate-001")
+
+export { vertexModel, vertexImageModel }

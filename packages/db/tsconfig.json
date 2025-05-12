@@ -1,4 +1,0 @@
-{
-  "extends": "@evoly/bun-typescript-config/base.json",
-  "include": ["src/**/*.ts", "src/schema/skillTrees"]
-}
